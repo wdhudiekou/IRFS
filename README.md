@@ -10,7 +10,7 @@
 By Di Wang, Jinyuan Liu, Risheng Liu, and Xin Fan
 
 ## Updates
-[2023-05-25] Our paper is available online! [[arXiv version](https://arxiv.org/pdf/2205.11876.pdf)]  
+[2023-05-17] Our paper is available online! [[arXiv version](https://arxiv.org/abs/2305.09999)]  
 
 
 <div align=center>
