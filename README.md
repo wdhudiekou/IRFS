@@ -10,4 +10,9 @@
 By Di Wang, Jinyuan Liu, Risheng Liu, and Xin Fan
 
 ## Updates
-[2022-05-25] Our paper is available online! [[arXiv version](https://arxiv.org/pdf/2205.11876.pdf)]  
+[2023-05-25] Our paper is available online! [[arXiv version](https://arxiv.org/pdf/2205.11876.pdf)]  
+
+
+<div align=center>
+<img src="https://github.com/wdhudiekou/IRFS-main/tree/master/Fig/network.png" width="80%">
+</div>
