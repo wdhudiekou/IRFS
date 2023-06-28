@@ -5,6 +5,6 @@
 [![PyTorch](https://img.shields.io/badge/pytorch-1.6.0-%237732a8)](https://pytorch.org/)
 
 
-### Unsupervised Misaligned Infrared and Visible Image Fusion via Cross-Modality Image Generation and Registration [IJCAI2022 Oral Presentation]
+### An interactively reinforced paradigm for joint infrared-visible image fusion and saliency object detection [Information Fusion]
 
 By Di Wang, Jinyuan Liu, Risheng Liu, and Xin Fan
