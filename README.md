@@ -14,5 +14,5 @@ By Di Wang, Jinyuan Liu, Risheng Liu, and Xin Fan
 
 
 <div align=center>
-<img src="https://github.com/wdhudiekou/IRFS-main/tree/master/Fig/network.png" width="80%">
+<img src="https://github.com/wdhudiekou/IRFS-main/blob/master/Fig/network.png" width="80%">
 </div>
