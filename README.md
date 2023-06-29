@@ -73,7 +73,14 @@ After training, the pretrained models will be saved in folder './checkpoint/'.
        python test_fgccnet.py   
        
 ## Experimental Results
-
+1. Quantitative evaluations of joint thermal infrared-visible image fusion and SOD on VT5000 dataset.
+    <div align=center>
+    <img src="https://github.com/wdhudiekou/IRFS/blob/master/Fig/IR-FSOD-1.png" width="95%">
+    </div>
+2. Qualitative evaluations of joint infrared-visible image fusion and SOD on VT5000 dataset.
+    <div align=center>
+        <img src="https://github.com/wdhudiekou/IRFS/blob/master/Fig/IR-FSOD-2.png" width="95%">
+    </div>
 ## Any Question
 If you have any other questions about the code, please email: diwang1211@mail.dlut.edu.cn
 
