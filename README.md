@@ -40,6 +40,7 @@ RGBT SOD Saliency Datasets
 
 
 ## Get start
+
 1. You can implement the interactive training of image fusion and SOD. Please check the dataset paths in train_Inter_IR_FSOD.py, and then run:
     ```python
        cd ./Trainer
