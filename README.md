@@ -60,12 +60,13 @@ Firstly, you need to download the pretrained model of [ResNet-34](https://drive.
        cd ./Trainer
        python train_fgccnet.py
    
-After training, the pretrained models will be saved in folder './checkpoint/'. You can load pretrained models to evaluate the performance of the IRFS in two tasks (i.e., image fusion, SOD) by running:
+After training, the pretrained models will be saved in folder './checkpoint/'. 
+1. You can load pretrained models to evaluate the performance of the IRFS in two tasks (i.e., image fusion, SOD) by running:
     ```python
        cd ./Test
        python test_IR_FSOD.py
        
-You can also test image fusion and SOD separately by running:
+2. You can also test image fusion and SOD separately by running:
     ```python
     ## for image fusion
        cd ./Test
