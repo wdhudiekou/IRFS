@@ -38,6 +38,11 @@ RGBT SOD Saliency Datasets
 *   [VT1000](https://github.com/lz118/RGBT-Salient-Object-Detection)
 *   [VT5000](https://github.com/lz118/RGBT-Salient-Object-Detection)
 
+## Data preparation
+1. You can obtain self-visual saliency maps for training image fusion by
+    ```python
+       cd ./data
+       python get_svm_map_softmax.py
 
 ## Get start
 Firstly, you need to download the pretrained model of [ResNet-34](https://drive.google.com/drive/folders/1vOaToFPI74Uv8Ok7C88zjaOat9wR8dwd) and put it into folder './pretrained/'.
@@ -46,6 +51,15 @@ Firstly, you need to download the pretrained model of [ResNet-34](https://drive.
        cd ./Trainer
        python train_Inter_IR_FSOD.py
 
+2. You can also train image fusion or SOD separately. Please check the dataset paths in train_fsfnet.py and train_fgccnet.py, and then run:
+   ```python
+    ## for image fusion
+       cd ./Trainer
+       python train_fsfnet.py
+    ## for SOD
+       cd ./Trainer
+       python train_fgccnet.py
+   
 ## Experimental Results
 
 ## Any Question
