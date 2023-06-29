@@ -7,7 +7,7 @@
 
 ### An interactively reinforced paradigm for joint infrared-visible image fusion and saliency object detection [Information Fusion]
 
-By Di Wang, Jinyuan Liu, Risheng Liu, and Xin Fan
+By Di Wang, Jinyuan Liu, Risheng Liu, and Xin Fan*
 
 
 <div align=center>
