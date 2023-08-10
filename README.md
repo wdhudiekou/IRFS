@@ -73,7 +73,7 @@ After training, the pretrained models will be saved in folder './checkpoint/'.
        python test_fgccnet.py   
 
 
-Noted that, since we alternately train FSFNet and FGC^2Net for a total of 10 times, labeled 0 to 9, therefore, we provide the pre-trained models of the 0th,1,5, and 9 times.
+Noted that, since we alternately train FSFNet and FGC^2Net for a total of 10 times, labeled 0 to 9, therefore, we provide the pre-trained models of the 0th, 1st, 5th, and 9th times.
 
 Please download the [pretrained models](https://pan.baidu.com/s/1XGhZtAzwR3KMa0QbK2KLXQ) (code: dxrb) of FSFNet and FGC^2Net, and put them into the folder './checkpoints/Fusion/' and the folder './checkpoints/SOD/'.    
 If you are not using Baidu Cloud Disk, you can also download the [pretrained models](https://drive.google.com/drive/folders/1YzzZUPke_LPHDewYoVJ3osFipLXOsK64?usp=drive_link) from Google Drive.
