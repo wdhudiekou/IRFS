@@ -7,14 +7,15 @@
 
 ### An interactively reinforced paradigm for joint infrared-visible image fusion and saliency object detection [Information Fusion]
 
-By Di Wang, Jinyuan Liu, Risheng Liu, and Xin Fan
+By Di Wang, Jinyuan Liu, Risheng Liu, and Xin Fan*
 
 
 <div align=center>
-<img src="https://github.com/wdhudiekou/IRFS-main/blob/master/Fig/network.png" width="80%">
+<img src="https://github.com/wdhudiekou/IRFS/blob/main/Fig/network.png" width="90%">
 </div>
 
 ## Updates
+
 [2023-05-17] Our paper is available online! [[arXiv version](https://arxiv.org/abs/2305.09999)]  
 
 ## Requirements
@@ -27,18 +28,71 @@ By Di Wang, Jinyuan Liu, Risheng Liu, and Xin Fan
 
 ## Dataset
 Please download the following datasets:
+
+Infrared and Visible Image Fusion Datasets
 *   [RoadScene](https://github.com/hanna-xu/RoadScene)
 *   [TNO](http://figshare.com/articles/TNO\_Image\_Fusion\_Dataset/1008029)
-*   [VT821]()
-*   [VT1000]()
-*   [VT5000]()
+*   [M3FD](https://github.com/JinyuanLiu-CV/TarDAL)
 
+RGBT SOD Saliency Datasets
+*   [VT821](https://github.com/lz118/RGBT-Salient-Object-Detection)
+*   [VT1000](https://github.com/lz118/RGBT-Salient-Object-Detection)
+*   [VT5000](https://github.com/lz118/RGBT-Salient-Object-Detection)
+
+## Data preparation
+1. You can obtain self-visual saliency maps for training image fusion by
+    ```python
+       cd ./data
+       python get_svm_map_softmax.py
 
 ## Get start
+Firstly, you need to download the pretrained model of [ResNet-34](https://drive.google.com/drive/folders/1vOaToFPI74Uv8Ok7C88zjaOat9wR8dwd) and put it into folder './pretrained/'.
+1. You can implement the interactive training of image fusion and SOD. Please check the dataset paths in train_Inter_IR_FSOD.py, and then run:
+    ```python
+       cd ./Trainer
+       python train_Inter_IR_FSOD.py
+2. You can also train image fusion or SOD separately. Please check the dataset paths in train_fsfnet.py and train_fgccnet.py, and then run:
+   ```python
+    ## for image fusion
+       cd ./Trainer
+       python train_fsfnet.py
+    ## for SOD
+       cd ./Trainer
+       python train_fgccnet.py  
+After training, the pretrained models will be saved in folder './checkpoint/'. 
+1. You can load pretrained models to evaluate the performance of the IRFS in two tasks (i.e., image fusion, SOD) by running:
+    ```python
+       cd ./Test
+       python test_IR_FSOD.py      
+2. You can also test image fusion and SOD separately by running:
+    ```python
+    ## for image fusion
+       cd ./Test
+       python test_fsfnet.py
+    ## for SOD
+        cd ./Test
+       python test_fgccnet.py   
+
+
+Noted that, since we alternately train FSFNet and FGC^2Net for a total of 10 times, labeled 0 to 9, therefore, we provide the pre-trained models of the 0th, 1st, 5th, and 9th times.
+
+Please download the [pretrained models](https://pan.baidu.com/s/1XGhZtAzwR3KMa0QbK2KLXQ) (code: dxrb) of FSFNet and FGC^2Net, and put them into the folder './checkpoints/Fusion/' and the folder './checkpoints/SOD/'.    
+If you are not using Baidu Cloud Disk, you can also download the [pretrained models](https://drive.google.com/drive/folders/1YzzZUPke_LPHDewYoVJ3osFipLXOsK64?usp=drive_link) from Google Drive.
 
 ## Experimental Results
+1. Quantitative evaluations of joint thermal infrared-visible image fusion and SOD on VT5000 dataset.
+    <div align=center>
+    <img src="https://github.com/wdhudiekou/IRFS/blob/master/Fig/IR-FSOD-1.png" width="95%">
+    </div>
+2. Qualitative evaluations of joint infrared-visible image fusion and SOD on VT5000 dataset.
+    <div align=center>
+        <img src="https://github.com/wdhudiekou/IRFS/blob/master/Fig/IR-FSOD-2.png" width="95%">
+    </div>
+## Any Question
+If you have any other questions about the code, please email: diwang1211@mail.dlut.edu.cn
 
 ## Citation
+If this work has been helpful to you, please feel free to cite our paper!
 ```
 @InProceedings{Wang_2023_IF,
 	author = {Di, Wang and Jinyuan, Liu and Risheng Liu and Xin, Fan},
